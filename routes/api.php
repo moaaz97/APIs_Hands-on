@@ -22,3 +22,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/posts', [\App\Http\Controllers\API\PostController::class, 'index']);
 Route::get('/posts/{id}', [\App\Http\Controllers\API\PostController::class, 'show']);
 Route::post('/posts', [\App\Http\Controllers\API\PostController::class, 'store']);
+Route::post('/posts/{id}', [\App\Http\Controllers\API\PostController::class, 'update']);
+Route::post('/posts/{id}', [\App\Http\Controllers\API\PostController::class, 'destroy']);
