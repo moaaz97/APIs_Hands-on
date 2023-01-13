@@ -20,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::get('/posts', [\App\Http\Controllers\API\PostController::class, 'index']);
+Route::get('/posts/{id}', [\App\Http\Controllers\API\PostController::class, 'show']);
